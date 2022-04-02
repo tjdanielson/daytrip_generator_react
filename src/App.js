@@ -1,6 +1,15 @@
+import { useState } from 'react';
 import './App.css'
+import GenerateOption from './Components/GenerateOption/GenerateOption';
 
 function App() {
+
+  const locations = ['Lisbon', 'London', 'Rome', 'Barcelona', 'Amsterdam']
+  const entertainment = ['Walking Tour', 'Wine Tasting', 'Cooking Class', 'Art Museum']
+  const restaurants = ['Pizza', 'Pasta', 'Pub'];
+  const transportation = ['Bike', 'Foot', 'Train'];
+
+
   return (
     <div>
       <header>
@@ -29,66 +38,17 @@ function App() {
       <body>
         {/* conatiner for cards */}
         <div>
-          {/* card */}
           <div>
-            <div>
-              <img src='./assets/world.png' />
-              <h3>Location</h3>
-            </div>
-            {/* buttons in card */}
-            <div>
-              <button>
-                Accept
-              </button>
-              <button>
-                New Pick
-              </button>
-            </div>
+            <GenerateOption options={locations}/>
           </div>
           <div>
-            <div>
-              <img src='./assets/entertainment.png' />
-              <h3>Entertainment</h3>
-            </div>
-            {/* buttons in card */}
-            <div>
-              <button>
-                Accept
-              </button>
-              <button>
-                New Pick
-              </button>
-            </div>
+            <GenerateOption options={entertainment}/>
           </div>
           <div>
-            <div>
-              <img src='./assets/restaurant.png' />
-              <h3>Restaurant</h3>
-            </div>
-            {/* buttons in card */}
-            <div>
-              <button>
-                Accept
-              </button>
-              <button>
-                New Pick
-              </button>
-            </div>
+            <GenerateOption options={restaurants}/>
           </div>
           <div>
-            <div>
-              <img src='./assets/transportation.png' />
-              <h3>Transportation</h3>
-            </div>
-            {/* buttons in card */}
-            <div>
-              <button>
-                Accept
-              </button>
-              <button>
-                New Pick
-              </button>
-            </div>
+            <GenerateOption options={transportation}/>
           </div>
         </div>
         <img src='./assets/awaywego_white.png' />

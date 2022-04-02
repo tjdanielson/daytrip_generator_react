@@ -1,11 +1,11 @@
-
+import './App.css'
 
 function App() {
   return (
     <div>
       <header>
         {/* nav bar */}
-        <div> 
+        <div class='nav-flex'> 
           <h3>DAYTRIP GENERATOR</h3>
           <div>
             <img src='./assets/Awaywego.png' alt-text='logo'/>

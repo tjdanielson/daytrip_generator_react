@@ -1,0 +1,15 @@
+.nav-flex {
+    display: flex;
+    background-color: rgba(52, 73, 102);
+    height: 5em;
+}
+
+.nav-flex img {
+    display: flex;
+    height: 100%;
+}
+
+.nav-flex h3 {
+    color: rgb(178, 247, 235);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}

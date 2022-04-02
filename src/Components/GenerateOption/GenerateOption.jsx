@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import './../../App.css';
 
 const GenerateOption = (props) => {
 
@@ -14,8 +15,8 @@ const GenerateOption = (props) => {
 
 
     return (
-        <div>
-            <div>
+        <div className='option-card'>
+            <div className='image-container'>
                 <img src={option.img} />
                 <h3>{option.name}</h3>
             </div>

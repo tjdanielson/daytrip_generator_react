@@ -13,3 +13,36 @@
     color: rgb(178, 247, 235);
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+
+.options-flex {
+    display: flex;
+    background-color: rgba(52, 73, 102);
+}
+
+.option-card {
+    width: 100%;
+    margin: 4em;
+    background-color: white;
+    border-radius: 15px;
+    align-self: center;
+
+}
+
+.image-container {
+    width: 90%;
+    height: 30%;
+
+}
+
+.option-card img {
+    width: 100%;
+    margin-top: 1em;
+}
+
+.option-card button {
+    margin: 1em;
+    border-radius: 5px;
+    background-color: rgb(169, 63, 85);
+    color: rgb(178, 247, 235);
+    align-self: center;
+}

@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import './App.css'
+import './App.css';
 import GenerateOption from './Components/GenerateOption/GenerateOption';
 
 function App() {
@@ -83,8 +83,8 @@ function App() {
     <div>
       <header>
         {/* nav bar */}
-        <div class='nav-flex'> 
-          <h3>DAYTRIP GENERATOR</h3>
+        <div className='nav-flex'> 
+          <h3>AWAY WE GO</h3>
           <div>
             <img src='./assets/Awaywego.png' alt-text='logo'/>
           </div>
@@ -96,17 +96,17 @@ function App() {
           </div>
           <div>
             <h2>
-              Welcome to the DAYTRIP GENERATOR
+              Welcome to AWAY WE GO!
             </h2>
-            <button>
-              Click here to generate your trip
-            </button>
+            <p>
+              We will generate a daytrip of your dreams! Don't like an option? No worries, keep clicking 'Generate Option' until you're satisfied with your trip. <br/>Without further ado....Away We Go!!!
+            </p>
           </div>
         </div>
       </header>
       <body>
         {/* conatiner for cards */}
-        <div>
+        <div className='options-flex'>
           <div>
             <GenerateOption options={locations}/>
           </div>

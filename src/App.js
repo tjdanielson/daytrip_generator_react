@@ -4,10 +4,79 @@ import GenerateOption from './Components/GenerateOption/GenerateOption';
 
 function App() {
 
-  const locations = ['Lisbon', 'London', 'Rome', 'Barcelona', 'Amsterdam']
-  const entertainment = ['Walking Tour', 'Wine Tasting', 'Cooking Class', 'Art Museum']
-  const restaurants = ['Pizza', 'Pasta', 'Pub'];
-  const transportation = ['Bike', 'Foot', 'Train'];
+  const locations = [
+    {
+      name: 'Lisbon', 
+      img: './assets/lisbon.png'
+    },
+    {
+      name: 'London', 
+      img: './assets/london.png'
+    },
+    {
+      name: 'Rome', 
+      img: './assets/rome.png'
+    },
+    {
+      name: 'Barcelona', 
+      img: './assets/barcelona.png'
+    },
+    {
+      name: 'Amsterdam', 
+      img: './assets/amsterdam.png'
+    },
+    ]
+
+  const entertainment = [
+    {
+      name: 'Walking Tour', 
+      img: './assets/walkingtour.png'
+    },
+    {
+      name: 'Wine Tasting', 
+      img: './assets/winetasting.png'
+    },
+    {
+      name: 'Cooking Class', 
+      img: './assets/cookingclass.png'
+    },
+    {
+      name: 'Art Museum', 
+      img: './assets/artmuseum.png'
+    },
+    ]
+  const restaurants = [
+    {
+      name: 'Pizza', 
+      img: './assets/pizza.png'
+    },
+    {
+      name: 'Pasta', 
+      img: './assets/pasta.png'
+    },
+    {
+      name: 'Pub', 
+      img: './assets/pub.png'
+    },
+    {
+      name: 'Waffles', 
+      img: './assets/waffles.png'
+    },
+  ]
+  const transportation = [
+    {
+      name: 'Bike', 
+      img: './assets/bike.png'
+    },
+    {
+      name: 'Foot', 
+      img: './assets/foot.png'
+    },
+    {
+      name: 'Train', 
+      img: './assets/train.png'
+    },
+  ]
 
 
   return (

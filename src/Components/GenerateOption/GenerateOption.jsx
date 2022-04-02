@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 
 const GenerateOption = (props) => {
 
-    const [option, setOption] = useState('');
+    const [option, setOption] = useState({});
 
     function selectOptions(event) {
         event.preventDefault();
@@ -16,8 +16,8 @@ const GenerateOption = (props) => {
     return (
         <div>
             <div>
-                <img src='./assets/world.png' />
-                <h3>{option}</h3>
+                <img src={option.img} />
+                <h3>{option.name}</h3>
             </div>
             {/* buttons in card */}
             <div>

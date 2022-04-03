@@ -103,8 +103,34 @@
 }
 
 .bottom-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bottom-button button {
     background-color: rgb(169, 63, 85);
     color: rgb(178, 247, 235);
+}
+
+.finalize-trip-container {
+    background-color:rgba(52, 73, 102);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 2em;
+}
+
+.finalize-trip-container button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 3em;
+    width: 12em;
+    border-radius: 5px;
+    background-color: rgb(169, 63, 85);
+    color: rgb(178, 247, 235);
+    font-size: 1em;
 }
 
 

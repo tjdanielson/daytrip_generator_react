@@ -18,13 +18,14 @@ const GenerateOption = (props) => {
         <div className='option-card'>
             <div className='image-container'>
                 <img src={option.img} />
-                <h3>{option.name}</h3>
             </div>
-            {/* buttons in card */}
-            <div>
-                <button onClick={selectOptions}>
-                    Generate Option!
-                </button>
+            <div className='card-words'>
+                <h3>{option.name}</h3>
+                <div className='button-container'>
+                    <button onClick={selectOptions} style={{cursor:'pointer'}}>
+                        Generate Option!
+                    </button>
+                </div>
             </div>
       </div>
 

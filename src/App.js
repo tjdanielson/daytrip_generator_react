@@ -92,8 +92,11 @@ function App() {
               Welcome to AWAY WE GO!
             </h2>
             <p>
-              We will generate a daytrip of your dreams! Don't like an option? No worries, keep clicking 'Generate Option' until you're satisfied with your trip. <br/>Without further ado....Away We Go!!!
+              We will generate a daytrip of your dreams! Don't like an option? No worries, keep clicking 'Generate Option' until you're satisfied with your trip. 
             </p>
+            <h3>
+              Without further ado....Away We Go!!!
+            </h3>
           </div>
         </div>
       </header>
@@ -114,9 +117,12 @@ function App() {
           </div>
         </div>
         <img src='./assets/awaywego_white.png' />
-        <button>
-          Click here to start over
-        </button>
+        <div className='bottom-button'>
+          <button onClick={App} style={{cursor:'pointer'}}>
+            Click here to start over
+          </button>
+        </div>
+
       </body>
     </div>
   );

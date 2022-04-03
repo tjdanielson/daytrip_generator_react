@@ -24,7 +24,11 @@
 .banner-words {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     width: 30%;
+    color:rgba(52, 73, 102);
+}
 
+.banner-words h3 {
+    font-style: italic;
 }
 
 .banner-img {
@@ -42,8 +46,9 @@
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    margin-top: 3em;
-
+    margin: (3em, 0, 0);
+    padding-top: 1em;
+    padding-bottom: 1em;
 }
 
 .option-card {
@@ -69,12 +74,37 @@
     margin-top: 1em;
     object-fit: contain;
     margin-left: 15px;
+    
 }
 
+.card-words h3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:rgba(52, 73, 102);
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
 .option-card button {
-    margin: 1em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 3em;
     border-radius: 5px;
     background-color: rgb(169, 63, 85);
     color: rgb(178, 247, 235);
-    align-self: center;
 }
+
+.bottom-button {
+    background-color: rgb(169, 63, 85);
+    color: rgb(178, 247, 235);
+}
+
+

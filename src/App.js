@@ -109,22 +109,28 @@ function App() {
         {/* conatiner for cards */}
         <div className='options-flex'>
           <div>
+            <h1>Location</h1>
             <GenerateOption options={locations}/>
           </div>
           <div>
+          <h1>Entertainment</h1>
             <GenerateOption options={entertainment}/>
           </div>
           <div>
+          <h1>Restaurant</h1>
             <GenerateOption options={restaurants}/>
           </div>
           <div>
+          <h1>Transportation</h1>
             <GenerateOption options={transportation}/>
           </div>
         </div>
-        <div>
+        <div className='finalize-trip-container'>
           <FinalizeTrip />
         </div>
-        <img src='./assets/awaywego_white.png' />
+        <div className='bottom-logo-container'>
+          <img src='./assets/awaywego_white.png' />
+        </div>
         <div className='bottom-button'>
           <button onClick={refreshPage}>Click here to restart</button>
         </div>

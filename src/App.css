@@ -51,6 +51,13 @@
     padding-bottom: 1em;
 }
 
+.options-flex h1 {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: lighter;
+    color:rgb(178, 247, 235);
+    padding-left: 15px;
+}
+
 .option-card {
     width: 400px;
     margin: 1em;
@@ -114,7 +121,7 @@
 }
 
 .finalize-trip-container {
-    background-color:rgba(52, 73, 102);
+    margin-top: 3em;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -132,5 +139,21 @@
     color: rgb(178, 247, 235);
     font-size: 1em;
 }
+
+.itinerary-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bottom-logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 2em;
+}
+
+
+
 
 

@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import './App.css';
 import GenerateOption from './Components/GenerateOption/GenerateOption';
+import FinalizeTrip from './Components/FinalizeTrip/FinalizeTrip'
 
 function App() {
 
@@ -121,13 +122,11 @@ function App() {
           </div>
         </div>
         <div>
-          <button>Finalize your trip!</button>
+          <FinalizeTrip />
         </div>
         <img src='./assets/awaywego_white.png' />
         <div className='bottom-button'>
-          <button onClick={refreshPage} style={{cursor:'pointer'}}>
-            Click here to start over
-          </button>
+          <button onClick={refreshPage}>Click here to restart</button>
         </div>
       </body>
     </div>

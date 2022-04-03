@@ -77,6 +77,10 @@ function App() {
       img: './assets/train.png'
     },
   ]
+  
+  function refreshPage() {
+    window.location.reload(false);
+  }
 
 
   return (
@@ -116,13 +120,15 @@ function App() {
             <GenerateOption options={transportation}/>
           </div>
         </div>
+        <div>
+          <button>Finalize your trip!</button>
+        </div>
         <img src='./assets/awaywego_white.png' />
         <div className='bottom-button'>
-          <button onClick={App} style={{cursor:'pointer'}}>
+          <button onClick={refreshPage} style={{cursor:'pointer'}}>
             Click here to start over
           </button>
         </div>
-
       </body>
     </div>
   );

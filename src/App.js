@@ -82,19 +82,12 @@ function App() {
   return (
     <div>
       <header>
-        {/* nav bar */}
-        <div className='nav-flex'> 
-          <h3>AWAY WE GO</h3>
-          <div>
-            <img src='./assets/Awaywego.png' alt-text='logo'/>
-          </div>
-        </div>
         {/* banner */}
-        <div>
-          <div>
+        <div className='banner-flex'>
+          <div className='banner-img'>
             <img src='./assets/awaywego_white.png' alt-text='logo' />
           </div>
-          <div>
+          <div className='banner-words'>
             <h2>
               Welcome to AWAY WE GO!
             </h2>

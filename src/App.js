@@ -8,79 +8,116 @@ function App() {
   const locations = [
     {
       name: 'Lisbon', 
-      img: './assets/lisbon.png'
+      img: './assets/lisbon.png',
+      type: 'location'
     },
     {
       name: 'London', 
-      img: './assets/london.png'
+      img: './assets/london.png',
+      type: 'location'
     },
     {
       name: 'Rome', 
-      img: './assets/rome.png'
+      img: './assets/rome.png',
+      type: 'location'
     },
     {
       name: 'Barcelona', 
-      img: './assets/barcelona.png'
+      img: './assets/barcelona.png',
+      type: 'location'
     },
     {
       name: 'Amsterdam', 
-      img: './assets/amsterdam.png'
+      img: './assets/amsterdam.png',
+      type: 'location'
     },
     ]
 
   const entertainment = [
     {
       name: 'Walking Tour', 
-      img: './assets/walkingtour.png'
+      img: './assets/walkingtour.png',
+      type: 'entertainment'
     },
     {
       name: 'Wine Tasting', 
-      img: './assets/winetasting.png'
+      img: './assets/winetasting.png',
+      type: 'entertainment'
     },
     {
       name: 'Cooking Class', 
-      img: './assets/cookingclass.png'
+      img: './assets/cookingclass.png',
+      type: 'entertainment'
     },
     {
       name: 'Art Museum', 
-      img: './assets/artmuseum.png'
+      img: './assets/artmuseum.png',
+      type: 'entertainment'
     },
     ]
   const restaurants = [
     {
       name: 'Pizza', 
-      img: './assets/pizza.png'
+      img: './assets/pizza.png',
+      type: 'restaurant'
     },
     {
       name: 'Pasta', 
-      img: './assets/pasta.png'
+      img: './assets/pasta.png',
+      type: 'restaurant'
     },
     {
       name: 'Pub', 
-      img: './assets/pub.png'
+      img: './assets/pub.png',
+      type: 'restaurant'
     },
     {
       name: 'Waffles', 
-      img: './assets/waffles.png'
+      img: './assets/waffles.png',
+      type: 'restaurant'
     },
   ]
   const transportation = [
     {
       name: 'Bike', 
-      img: './assets/bike.png'
+      img: './assets/bike.png',
+      type: 'transportation'
     },
     {
       name: 'Foot', 
-      img: './assets/foot.png'
+      img: './assets/foot.png',
+      type: 'transportation'
     },
     {
       name: 'Train', 
-      img: './assets/train.png'
+      img: './assets/train.png',
+      type: 'transportation'
     },
   ]
+
+  const [finalOptions, setFinalOptions] = useState([])
   
   function refreshPage() {
     window.location.reload(false);
+  }
+
+  function getFinalOptions(option) {
+    let tempFinalOptions = [...finalOptions]
+    switch(option.type){
+      case 'location':
+        tempFinalOptions[0] = option;
+        break;
+      case 'entertainment':
+        tempFinalOptions[1] = option;
+        break;
+      case 'restaurant':
+        tempFinalOptions[2] = option;
+        break;
+      case 'transportation':
+        tempFinalOptions[3] = option;
+        break;
+    }
+    setFinalOptions(tempFinalOptions);
   }
 
 
@@ -110,23 +147,23 @@ function App() {
         <div className='options-flex'>
           <div>
             <h1>Location</h1>
-            <GenerateOption options={locations}/>
+            <GenerateOption options={locations} getFinalOptions={getFinalOptions}/>
           </div>
           <div>
           <h1>Entertainment</h1>
-            <GenerateOption options={entertainment}/>
+            <GenerateOption options={entertainment} getFinalOptions={getFinalOptions}/>
           </div>
           <div>
           <h1>Restaurant</h1>
-            <GenerateOption options={restaurants}/>
+            <GenerateOption options={restaurants} getFinalOptions={getFinalOptions}/>
           </div>
           <div>
           <h1>Transportation</h1>
-            <GenerateOption options={transportation}/>
+            <GenerateOption options={transportation} getFinalOptions={getFinalOptions}/>
           </div>
         </div>
         <div className='finalize-trip-container'>
-          <FinalizeTrip />
+          <FinalizeTrip finalOptions={finalOptions}/>
         </div>
         <div className='bottom-logo-container'>
           <img src='./assets/awaywego_white.png' />

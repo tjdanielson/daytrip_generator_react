@@ -11,6 +11,7 @@ const GenerateOption = (props) => {
         let randomSelection = props.options[randomNumber]
         console.log(randomSelection);
         setOption(randomSelection); 
+        props.getFinalOptions(randomSelection);
     }
 
 

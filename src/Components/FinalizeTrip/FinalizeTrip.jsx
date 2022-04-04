@@ -7,6 +7,13 @@ const FinalizeTrip = (props) => {
     const onClick = () => setShowResults(true)
     
     function PrintResults() {
+        if(props.finalOptions.length < 4){
+            return (
+                <div className='error-message'>
+                    Please generate options for all items above before finalizing your trip.
+                </div>
+            )
+        }
         return (
             <div>
                 <h2>Final Itinerary</h2>
@@ -43,7 +50,7 @@ const FinalizeTrip = (props) => {
             <div className='buttons'>
                 <button onClick={onClick} style={{cursor: 'pointer'}}>Finalize your trip</button>
                 <div className='bottom-button'>
-                    <button onClick={refreshPage}>Restart Generator</button>
+                    <button onClick={refreshPage} style={{cursor: 'pointer'}}>Restart Generator</button>
                 </div>
             </div>
             {showResults ? <PrintResults /> : null}

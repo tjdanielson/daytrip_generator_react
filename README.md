@@ -1,4 +1,4 @@
-# Away We Go - daytrip generatro
+# Away We Go - daytrip generator
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 

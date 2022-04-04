@@ -57,22 +57,22 @@ function App() {
     ]
   const restaurants = [
     {
-      name: 'Pizza', 
+      name: 'Giuseppe\'s Pizza', 
       img: './assets/pizza.png',
       type: 'restaurant'
     },
     {
-      name: 'Pasta', 
+      name: 'Great Pasta', 
       img: './assets/pasta.png',
       type: 'restaurant'
     },
     {
-      name: 'Pub', 
+      name: 'The Pub', 
       img: './assets/pub.png',
       type: 'restaurant'
     },
     {
-      name: 'Waffles', 
+      name: 'Yay Waffles', 
       img: './assets/waffles.png',
       type: 'restaurant'
     },
@@ -97,9 +97,6 @@ function App() {
 
   const [finalOptions, setFinalOptions] = useState([])
   
-  function refreshPage() {
-    window.location.reload(false);
-  }
 
   function getFinalOptions(option) {
     let tempFinalOptions = [...finalOptions]
@@ -168,9 +165,7 @@ function App() {
         <div className='bottom-logo-container'>
           <img src='./assets/awaywego_white.png' />
         </div>
-        <div className='bottom-button'>
-          <button onClick={refreshPage}>Click here to restart</button>
-        </div>
+
       </body>
     </div>
   );

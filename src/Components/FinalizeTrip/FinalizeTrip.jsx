@@ -9,34 +9,43 @@ const FinalizeTrip = (props) => {
     function PrintResults() {
         return (
             <div>
-                <h2>Itinerary</h2>
+                <h2>Final Itinerary</h2>
                 <div className='itinerary-card'>
-                    <h3>Item one</h3>
+                    <h3>One - Location</h3>
                     <p>You will be traveling to {props.finalOptions[0].name}</p>
                     <img src='' />
                 </div>
                 <div className='itinerary-card'>
-                    <h3>Item two</h3>
-                    <p>While in place, you will be attending a(n) {props.finalOptions[1].name}</p>
+                    <h3>Two - Entertainment</h3><br />
+                    <p>While in {props.finalOptions[0].name}, you will be attending a(n) {props.finalOptions[1].name}</p>
                     <img src='' />
                 </div>
                 <div className='itinerary-card'>
-                    <h3>Item three</h3>
-                    <p>After your entertainment, you will enjoy a meal at restaurant {props.finalOptions[2].name}</p>
+                    <h3>Three - Restaurant</h3><br />
+                    <p>After your entertainment, you will enjoy a meal at {props.finalOptions[2].name}</p>
                     <img src='' />
                 </div>
                 <div className='itinerary-card'>
-                    <h3>Item four</h3>
+                    <h3>Four - Transportation</h3><br />
                     <p>Over the course of your day trip, you will be traveling by {props.finalOptions[3].name}</p>
                     <img src='' />
                 </div>
         </div>
         );
     }
+
+    function refreshPage() {
+        window.location.reload(false);
+      }
     
     return (
         <div className='finalize-trip-container'>
-            <button onClick={onClick} style={{cursor: 'pointer'}}>Finalize your trip!</button>
+            <div className='buttons'>
+                <button onClick={onClick} style={{cursor: 'pointer'}}>Finalize your trip</button>
+                <div className='bottom-button'>
+                    <button onClick={refreshPage}>Restart Generator</button>
+                </div>
+            </div>
             {showResults ? <PrintResults /> : null}
         </div>
 

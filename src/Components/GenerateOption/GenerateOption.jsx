@@ -24,7 +24,7 @@ const GenerateOption = (props) => {
                 <h3>{option.name}</h3>
                 <div className='button-container'>
                     <button onClick={selectOptions} style={{cursor:'pointer'}}>
-                        Generate Option!
+                        Generate Option
                     </button>
                 </div>
             </div>

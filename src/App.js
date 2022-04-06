@@ -96,6 +96,21 @@ function App() {
     },
   ]
 
+  const [categories, setCategories] = useState([
+    {
+        name: 'Locations'
+    }, 
+    {
+        name: 'Entertainment'
+    }, 
+    {
+        name: 'Restaurant'
+    }, 
+    {
+        name: 'Transportation'
+    }, 
+]);
+
   const [finalOptions, setFinalOptions] = useState([])
   
 
